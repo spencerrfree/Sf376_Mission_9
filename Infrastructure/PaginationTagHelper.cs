@@ -36,7 +36,7 @@ namespace Sf376_Mission_9.Infrastructure
 
             TagBuilder final = new TagBuilder("div");
 
-            for (int i = 1; i < pageBlah.TotalPages +1; i++)
+            for (int i = 1; i <= pageBlah.TotalPages; i++)
             {
                 TagBuilder tb = new TagBuilder("a");
                 tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
