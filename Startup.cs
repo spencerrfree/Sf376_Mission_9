@@ -33,6 +33,8 @@ namespace Sf376_Mission_9
 
             });
             services.AddScoped<IBookStoreRepository, EFBookStoreRespository>();
+            services.AddScoped<IPurchaseRepository,EFPurchaseRepository>();
+
             services.AddRazorPages();
 
             services.AddDistributedMemoryCache();
